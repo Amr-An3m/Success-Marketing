@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="قصة نجاح – وكالة تسويق وحلول أعمال ذكية في السعودية. نقدم خدمات متكاملة في التسويق الإبداعي، الأعمال، العقار، والذكاء الاصطناعي. شريكك لتحويل الأفكار إلى قصص نجاح حقيقية." />
+  <meta name="keywords" content="قصة نجاح, تسويق رقمي, حلول أعمال, ذكاء اصطناعي, تسويق عقاري, استشارات تسويقية, جدة, السعودية" />
+  <meta name="author" content="قصة نجاح" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://amr-an3m.github.io/Success-Marketing/index.html" />
+  <link rel="alternate" hreflang="ar" href="https://amr-an3m.github.io/Success-Marketing/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amr-an3m.github.io/Success-Marketing/" />
+  <meta property="og:title" content="قصة نجاح - وكالة تسويق وحلول أعمال ذكية في السعودية" />
+  <meta property="og:description" content="شريكك الاستراتيجي في التسويق وحلول الأعمال. نقدم خدمات تسويق رقمي، ذكاء اصطناعي، حلول عقارية، واستشارات أعمال لتحويل أفكارك إلى قصص نجاح." />
+  <meta property="og:image" content="https://amr-an3m.github.io/Success-Marketing/assets/logo.png" />
+  <meta property="og:locale" content="ar_SA" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="قصة نجاح - وكالة تسويق وحلول أعمال ذكية" />
+  <meta name="twitter:description" content="نحوّل أفكارك إلى قصص نجاح. خدمات متكاملة في التسويق الرقمي، الذكاء الاصطناعي، حلول الأعمال والتسويق العقاري." />
+  <meta name="twitter:image" content="https://amr-an3m.github.io/Success-Marketing/assets/logo.png" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  
+  <title>قصة نجاح - وكالة تسويق وحلول أعمال ذكية | الرئيسية</title>
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "قصة نجاح",
+    "description": "وكالة تسويق وحلول أعمال ذكية في المملكة العربية السعودية",
+    "url": "https://amr-an3m.github.io/Success-Marketing/",
+    "telephone": "+966560061608",
+    "email": "info@success-marketing.sa",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "جدة",
+      "addressCountry": "SA"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61580665604399",
+      "https://www.instagram.com/qissat.naja7",
+      "https://www.tiktok.com/@qissatna7"
+    ]
+  }
+  </script>
+</head>
+  <body>
+<style>
+/* --- التنسيق المطور: عمودين للميزات لتقليل حجم البطاقة --- */
+@media (max-width: 768px) {
+    .service-card {
+        display: grid;
+        grid-template-columns: 50px 1fr; /* تصغير طفيف لمساحة الأيقونة */
+        grid-template-areas: 
+            "icon title"
+            "list list"
+            "btn btn";
+        gap: 1rem;
+        padding: 1.2rem; /* تقليل الحشو الداخلي لضغط الحجم */
+        background: #ffffff;
+        border-radius: 1.5rem;
+        border: 1px solid rgba(212, 175, 55, 0.1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+    }
+
+    .service-card .service-icon {
+        grid-area: icon;
+        width: 46px;
+        height: 46px;
+        border-radius: 0.8rem;
+    }
+
+    .service-card h3 {
+        grid-area: title;
+        font-size: 1.15rem;
+        align-self: center;
+    }
+
+    /* التعديل الجوهري: تحويل القائمة إلى شبكة من عمودين */
+    .service-card ul {
+        grid-area: list;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* تقسيم العرض إلى نصفين */
+        gap: 0.6rem 0.4rem; /* مسافة عمودية وأفقية بين العناصر */
+        padding-top: 1rem;
+        margin-top: 0.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    .service-card li {
+        font-size: 0.82rem; /* تصغير الخط قليلاً ليناسب العمودين */
+        color: var(--text-muted);
+        display: flex;
+        align-items: center;
+        line-height: 1.2;
+    }
+
+    /* تحسين شكل نقطة القائمة لتكون أصغر وأرشق */
+    .service-card li::before {
+        content: '\f00c'; /* أيقونة الصح */
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        margin-left: 0.5rem;
+        font-size: 0.7rem;
+        color: var(--accent-gold);
+        flex-shrink: 0;
+    }
+
+    .service-card-btn {
+        grid-area: btn;
+        margin-top: 0.5rem;
+        padding: 0.75rem;
+        font-size: 0.9rem;
+        border-radius: 0.8rem;
+    }
+}
+
+</style>
+    <!-- Nav Overlay for mobile -->
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+    <!-- زر واتساب عائم -->
+    <a
+      href="https://wa.me/966560061608"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="تواصل عبر واتساب">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <header class="header" role="banner">
+      <div class="container navbar">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="الصفحة الرئيسية - قصة نجاح">
+          <img
+            src="assets/logo.png"
+            alt="شعار قصة نجاح"
+            width="42"
+            height="42"
+            loading="eager" />
+          <span>قصة نجاح</span>
+        </a>
+        <nav
+          class="nav-links"
+          id="navLinks"
+          role="navigation"
+          aria-label="القائمة الرئيسية">
+          <a href="index.html" class="active" aria-current="page">الرئيسية</a>
+          <a href="about.html">من نحن</a>
+          <a href="services.html">الخدمات</a>
+          <a href="blog.html">المدونة</a>
+          <a href="contact.html">تواصل معنا</a>
+        </nav>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="فتح القائمة"
+          aria-expanded="false"
+          aria-controls="navLinks">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero section-with-bg" aria-label="قسم الترحيب">
+        <div class="lottie-bg-container">
+          <lottie-player
+            src="assets/lottie/wave-animation.json"
+            background="transparent"
+            speed="0.5"
+            style="width: 100%; height: 100%"
+            loop
+            autoplay></lottie-player>
+        </div>
+        <div class="container hero-content">
+          <div data-aos="fade-left">
+            <h1 class="hero-title">
+              نحن <span>قصة نجاح</span><br />للتسويق و حلول الأعمال الذكية
+            </h1>
+            <p class="hero-text">حيث نعيد تعريف المستحيل في عالم الأعمال</p>
+            <div class="hero-buttons">
+              <a href="#contact-home" class="btn btn-primary">قم بحجز موعد</a>
+              <a
+                href="https://wa.me/966560061608"
+                class="btn btn-outline-white"
+                rel="noopener noreferrer"
+                target="_blank"
+                >الخط الساخن</a
+              >
+            </div>
+          </div>
+          <div data-aos="fade-right">
+            <div class="hero-card">
+              <img
+                src="assets/logo.png"
+                alt="شعار قصة نجاح"
+                width="70"
+                loading="eager" />
+              <h3>قصة نجاح</h3>
+              <p>
+                نحن مؤسسة سعودية مختصّة بحلول الأعمال والتسويق الإبداعي. نحول
+                التحديات إلى فرص، والأفكار إلى قصص نجاح حية. معنا، مشروعك ليس
+                مجرد نشاط… بل علامة فارقة تُلهم السوق.
+              </p>
+              <a href="about.html" class="btn-link"
+                >من نحن وإنجازاتنا
+                <i class="fas fa-arrow-left" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="section section-with-bg" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 id="services-title">اكتشف خدماتنا <span>المتميزة</span></h2>
+            <p>الأعمال الذكية و التسويق الابداعي</p>
+          </div>
+          <div class="services-grid" role="list">
+            <!-- Service 1 -->
+            <article class="service-card" data-aos="zoom-in" role="listitem">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3>خدمات الأعمال</h3>
+              <ul aria-label="خدمات الأعمال">
+                <li>إعداد الخطط التشغيلية</li>
+                <li>كتابة عروض المستثمرين</li>
+                <li>تطوير المبادرات</li>
+                <li>تنسيق الشراكات</li>
+                <li>إدارة المشاريع</li>
+              </ul>
+              <a href="services.html" class="btn btn-outline service-card-btn"
+                >اطلع على المزيد</a
+              >
+            </article>
+            <!-- Service 2 -->
+            <article
+              class="service-card"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              role="listitem">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>خدمات التسويق الابداعي</h3>
+              <ul aria-label="خدمات التسويق الابداعي">
+                <li>بناء الهوية البصرية</li>
+                <li>إدارة حسابات التواصل</li>
+                <li>التسويق الرقمي</li>
+                <li>التحليل والتقارير</li>
+                <li>إعداد المحتوى التسويقي الإبداعي</li>
+              </ul>
+              <a href="services.html" class="btn btn-outline service-card-btn"
+                >اطلع على المزيد</a
+              >
+            </article>
+            <!-- Service 3 -->
+            <article
+              class="service-card"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              role="listitem">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fas fa-building"></i>
+              </div>
+              <h3>خدمات التسويق العقاري</h3>
+              <ul aria-label="خدمات التسويق العقاري">
+                <li>تصوير العقارات</li>
+                <li>كتابة الإعلانات</li>
+                <li>إدارة الحسابات العقارية</li>
+                <li>إعداد العروض العقارية</li>
+                <li>التسويق العقاري الرقمي</li>
+                <li>الربط مع العملاء</li>
+              </ul>
+              <a href="services.html" class="btn btn-outline service-card-btn"
+                >اطلع على المزيد</a
+              >
+            </article>
+            <!-- Service 4 -->
+            <article
+              class="service-card"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              role="listitem">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fas fa-video"></i>
+              </div>
+              <h3>خدمات التوثيق والإنتاج</h3>
+              <ul aria-label="خدمات التوثيق والإنتاج">
+                <li>إنتاج الفيديوهات</li>
+                <li>تغطيات ميدانية</li>
+                <li>تصوير الفعاليات</li>
+                <li>قصص مصورة</li>
+                <li>المحتوى الإنساني</li>
+                <li>التوثيق الإعلامي</li>
+              </ul>
+              <a href="services.html" class="btn btn-outline service-card-btn"
+                >اطلع على المزيد</a
+              >
+            </article>
+            <!-- Service 5 -->
+            <article
+              class="service-card"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              role="listitem">
+              <div class="service-icon" aria-hidden="true">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3>خدمات الابتكار والذكاء الاصطناعي</h3>
+              <ul aria-label="خدمات الابتكار والذكاء الاصطناعي">
+                <li>تصميم حلول ذكية</li>
+                <li>تطوير أدوات تحليل</li>
+                <li>توصيات تسويقية آلية</li>
+                <li>الربط بين البيانات والعملاء</li>
+                <li>بناء أنظمة تسويق ذكية</li>
+                <li>دعم اتخاذ القرار</li>
+              </ul>
+              <a href="services.html" class="btn btn-outline service-card-btn"
+                >اطلع على المزيد</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clients Section -->
+      <section class="section bg-light" aria-labelledby="clients-title">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 id="clients-title">عملائنا شركاء للنجاح</h2>
+          </div>
+          <div
+            class="swiper clients-slider"
+            data-aos="fade-up"
+            aria-label="شعارات العملاء">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/brand/1.png"
+                  alt="شعار عميل 1"
+                  class="client-logo"
+                  loading="lazy"
+                  width="100"
+                  height="70" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/brand/2.png"
+                  alt="شعار عميل 2"
+                  class="client-logo"
+                  loading="lazy"
+                  width="100"
+                  height="70" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/brand/3.png"
+                  alt="شعار عميل 3"
+                  class="client-logo"
+                  loading="lazy"
+                  width="100"
+                  height="70" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/brand/4.png"
+                  alt="شعار عميل 4"
+                  class="client-logo"
+                  loading="lazy"
+                  width="100"
+                  height="70" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/brand/5.png"
+                  alt="شعار عميل 5"
+                  class="client-logo"
+                  loading="lazy"
+                  width="100"
+                  height="70" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Service / Hotline -->
+      <section class="section">
+        <div class="container quick-service" data-aos="fade-up">
+          <div class="lottie-bg">
+            <lottie-player
+              src="assets/lottie/krug4.json"
+              background="transparent"
+              speed="0.5"
+              style="width: 100%; height: 100%"
+              loop
+              autoplay>
+            </lottie-player>
+          </div>
+          <h2 class="quick-service-title">خدمة الخط السريع</h2>
+          <p class="quick-service-text">
+            نقدم لك حلولاً فورية و فعالة لمشاريعك و حملاتك التسويقية. سواء كنت
+            بحاجة لتنفيذ سريع أو استشارة عاجلة، فريقنا مستعد لتلبية احتياجاتك
+            بأعلى مستوى من الاحترافية، مع ضمان النتائج المتميزة في أسرع وقت
+            ممكن...
+          </p>
+          <a
+            href="https://wa.me/966560061608"
+            class="btn btn-primary"
+            rel="noopener noreferrer"
+            target="_blank"
+            >تواصل الآن</a
+          >
+        </div>
+      </section>
+
+      <!-- Vision & Steps -->
+      <section class="section section-with-bg" aria-labelledby="vision-title">
+        <div class="lottie-bg-container" style="opacity: 0.1">
+          <lottie-player
+            src="assets/lottie/krug4.json"
+            background="transparent"
+            speed="0.8"
+            style="width: 100%; height: 100%"
+            loop
+            autoplay></lottie-player>
+        </div>
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2 id="vision-title">
+              نحن لا نبيع الخدمة، نحن نصنع <span>قصة نجاح</span>
+            </h2>
+            <p>قصة نجاحك معنا</p>
+          </div>
+          <div class="steps">
+            <div class="step" data-aos="flip-right">
+              <div class="step-number" aria-hidden="true">1</div>
+              <h3>اكتشف</h3>
+              <p>
+                في عالم الأعمال المتسارع، تبرز الحاجة إلى شريك استراتيجي يمتلك
+                القدرة على تحويل التحديات إلى فرص، والأفكار إلى قصص نجاح ملموسة.
+              </p>
+            </div>
+            <div class="step" data-aos="flip-right" data-aos-delay="100">
+              <div class="step-number" aria-hidden="true">2</div>
+              <h3>جوهر التصميم</h3>
+              <p>
+                نحن نؤمن بأن كل عمل تجاري، بغض النظر عن حجمه أو قطاعه، يمتلك في
+                جوهره قصة فريدة تستحق أن تروى.
+              </p>
+            </div>
+            <div class="step" data-aos="flip-right" data-aos-delay="200">
+              <div class="step-number" aria-hidden="true">3</div>
+              <h3>صنع الخبرة</h3>
+              <p>
+                من خلال مزيج فريد من الخبرات العميقة بالسوق السعودي، والفكر
+                الشبابي الإبداعي، والالتزام بالنتائج الحقيقية، نقدم حلول تسويقية
+                واستشارية تتجاوز التوقعات.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Preview -->
+      <section class="section bg-light" aria-labelledby="about-preview-title">
+        <div class="container">
+          <div class="about-preview-grid">
+            <div data-aos="fade-left">
+              <div class="section-title section-title-right">
+                <h2 id="about-preview-title">رؤيتنا</h2>
+              </div>
+              <h2>قصة نجاح تقدم رؤيتها</h2>
+              <p class="about-description">
+                أن تكون الشريك الاستراتيجي الرائد و المفضل في مجال التسويق و
+                حلول الأعمال في المملكة السعودية و المنطقة
+              </p>
+              <h4>قيمنا</h4>
+              <div class="values-list">
+                <div>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> العميل
+                  أولاً
+                </div>
+                <div>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> التميز
+                </div>
+                <div>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> النزاهة
+                </div>
+                <div>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> التعاون
+                </div>
+                <div>
+                  <i class="fas fa-check-circle" aria-hidden="true"></i> سعادة
+                  العملاء
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 0.8rem;
+                  flex-wrap: wrap;
+                  margin-top: 1.5rem;
+                ">
+                <a href="about.html" class="btn btn-primary">المزيد</a>
+                <a href="tel:+966560061608" class="btn btn-outline">إتصل بنا</a>
+              </div>
+            </div>
+            <div data-aos="fade-right">
+              <lottie-player
+                src="assets/lottie/company-sharing.json"
+                background="transparent"
+                speed="1"
+                style="
+                  width: 100%;
+                  max-width: 600px;
+                  margin: 0 auto;
+                  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+                "
+                loop
+                autoplay></lottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section Home -->
+      <section id="contact-home" class="contact-section section-with-bg">
+        <div class="lottie-bg-container" style="opacity: 0.05">
+          <lottie-player
+            src="assets/lottie/krug4.json"
+            background="transparent"
+            speed="0.5"
+            style="width: 100%; height: 100%"
+            loop
+            autoplay></lottie-player>
+        </div>
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>تواصل <span>معنا</span></h2>
+          </div>
+          <div class="contact-wrapper">
+            <div class="contact-info-side" data-aos="fade-left">
+              <div class="section-title section-title-right">
+                <h2 id="home-contact-title">تواصل معنا <span>الآن</span></h2>
+              </div>
+              <p style="margin-bottom: 2rem">
+                نحن هنا لمساعدتكم في تحويل أفكاركم إلى قصص نجاح حقيقية. فريقنا
+                جاهز للرد على استفساراتكم وبناء استراتيجيات نمو مخصصة لأعمالكم.
+              </p>
+              <div style="margin-top: 30px">
+                <lottie-player
+                  src="assets/lottie/tech-support.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; max-width: 300px"
+                  loop
+                  autoplay></lottie-player>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h4>اتصل بنا</h4>
+                  <p dir="ltr">+966 56 006 1608</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>البريد الإلكتروني</h4>
+                  <p>info@success-marketing.sa</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4>الموقع</h4>
+                  <p>المملكة العربية السعودية، جدة</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-card" data-aos="fade-right">
+              <form class="contact-form">
+                <div class="form-group">
+                  <label class="form-label">الاسم الكامل</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="أدخل اسمك هنا"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">البريد الإلكتروني</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="example@mail.com"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">الموضوع</label>
+                  <select class="form-control">
+                    <option>استشارة تسويقية</option>
+                    <option>حلول أعمال</option>
+                    <option>ذكاء اصطناعي</option>
+                    <option>أخرى</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">الرسالة</label>
+                  <textarea
+                    class="form-control"
+                    placeholder="كيف يمكننا مساعدتك؟"
+                    required></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="width: 100%">
+                  إرسال الرسالة
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section section-with-bg" data-aos="zoom-in">
+        <div class="lottie-bg-container">
+          <lottie-player
+            src="assets/lottie/Wave Animation.json"
+            background="transparent"
+            speed="0.5"
+            style="width: 100%; height: 100%"
+            loop
+            autoplay></lottie-player>
+        </div>
+        <div class="container text-center">
+          <h2>هل أنت مستعد لتكون قصة النجاح القادمة؟</h2>
+          <p style="margin-bottom: 2rem; color: var(--text-muted)">
+            اكتشف كيف يمكننا مساعدتك في تحقيق أهدافك من خلال خدماتنا المتكاملة.
+          </p>
+          <div
+            class="flex-center gap-1"
+            style="justify-content: center; display: flex">
+            <a href="services.html" class="btn btn-primary">اكتشف خدماتنا</a>
+            <a href="#contact-home" class="btn btn-outline">تواصل معنا الآن</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img
+                src="assets/logo.png"
+                alt="شعار قصة نجاح"
+                loading="lazy"
+                width="50"
+                height="50" />
+              <h4>قصة نجاح</h4>
+            </div>
+            <p>
+              شركة سعودية رائدة في حلول الأعمال الذكية والتسويق الإبداعي، نصنع
+              الفارق ونحوّل الأفكار إلى إنجازات.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/profile.php?id=61580665604399"
+                aria-label="فيسبوك"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i class="fab fa-facebook-f" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/qissat.naja7?igsh=bWxjdW5teGVxYncz"
+                aria-label="انستغرام"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.snapchat.com/add/qissat.naja7?share_id=FoQW88v0vFo&locale=ar-SA"
+                aria-label="سناب شات"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i class="fab fa-snapchat" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@qissatna7?_t=ZS-90C1knsUTUA&_r=1"
+                aria-label="تيك توك"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i class="fab fa-tiktok" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://wa.me/966560061608"
+                aria-label="واتساب"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i class="fab fa-whatsapp" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col links-col">
+            <h4>استكشف</h4>
+            <ul>
+              <li>
+                <a href="index.html"
+                  ><i class="fas fa-angle-left" aria-hidden="true"></i>
+                  الرئيسية</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fas fa-angle-left" aria-hidden="true"></i> من
+                  نحن</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-angle-left" aria-hidden="true"></i>
+                  الخدمات</a
+                >
+              </li>
+              <li>
+                <a href="blog.html"
+                  ><i class="fas fa-angle-left" aria-hidden="true"></i>
+                  المدونة</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col links-col">
+            <h4>خدماتنا</h4>
+            <ul>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-angle-left" aria-hidden="true"></i> حلول
+                  الأعمال</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-angle-left" aria-hidden="true"></i> التسويق
+                  الرقمي</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-angle-left" aria-hidden="true"></i> الذكاء
+                  الاصطناعي</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="fas fa-angle-left" aria-hidden="true"></i> تطوير
+                  الويب</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col links-col">
+            <h4>تواصل معنا</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/BkFAhbRME6QfiBcF7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  <span>المملكة العربية السعودية، جدة</span></a
+                >
+              </li>
+              <li>
+                <a href="tel:+966560061608"
+                  ><i class="fas fa-phone-alt" aria-hidden="true"></i>
+                  <span dir="ltr">+966 56 006 1608</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/966560061608"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-whatsapp" aria-hidden="true"></i>
+                  <span>واتساب مباشر</span></a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@success-marketing.sa"
+                  ><i class="fas fa-envelope" aria-hidden="true"></i>
+                  <span>info@success-marketing.sa</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>جميع الحقوق محفوظة &copy; 2026 <strong>قصة نجاح</strong></p>
+          <div class="footer-bottom-links">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">الشروط والأحكام</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
